@@ -15,7 +15,7 @@ func ConnectDatabase() {
 		panic(err)
 	}
 
-	database.AutomMigrate(&Product{})
+	database.AutoMigrate(&Product{})
 
 	DB = database
 }
