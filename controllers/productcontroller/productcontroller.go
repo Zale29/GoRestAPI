@@ -8,12 +8,12 @@ import (
 )
 
 // Show
-func Get(c *gin.Context) {
+func Index(c *gin.Context) {
 
-	var products []models.Product
+	var Products []models.Product
 
-	models.DB.Find(&products)
-	c.JSON(http.StatusOK, gin.H{"Products ": products})
+	models.DB.Find(&Products)
+	c.JSON(http.StatusOK, gin.H{"Products ": Products})
 
 }
 

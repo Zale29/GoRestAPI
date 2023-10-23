@@ -3,16 +3,15 @@
 package models
 
 import (
-	"github.com/gorm.io/gorm"
-	"github.com/gorm.io/drivers/mysql"
-
+	"gorm.io/driver/mysql"
+	"gorm.io/gorm"
 )
 
 var DB *gorm.DB
 
 func ConnectDatabase() {
-	database, err := gorm.Open(mysql.Open("root:@tcp(localhost:3306)/GoRestApi"))
-	if err := nil {
+	database, err := gorm.Open(mysql.Open("root:@tcp(localhost:3306)/gorestapi"))
+	if err != nil {
 		panic(err)
 	}
 
