@@ -1,6 +1,6 @@
-module github.com/Zale29/gorestapi
+module github.com/Zale29/GoRestAPI
 
-go 1.21.3
+go 1.19
 
 require (
 	github.com/bytedance/sonic v1.9.1 // indirect

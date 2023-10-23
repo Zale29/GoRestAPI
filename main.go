@@ -1,11 +1,12 @@
 package main
 
 import (
-	"github.com/Zale29/gorestapi/controller/productcontroller"
+	"github.com/Zale29/GoRestAPI/controllers/productcontroller"
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
-	r := git.Default()
+	r := gin.Default()
 
 	r.GET("/api/products", productcontroller.Index)
 	r.GET("/api/products:id", productcontroller.Show)
