@@ -8,7 +8,7 @@ import (
 func main() {
 	r := gin.Default()
 
-	r.GET("/api/products", productcontroller.Index)
+	r.GET("/api/products", productcontroller.Get)
 	r.GET("/api/products:id", productcontroller.Show)
 	r.POST("/api/products", productcontroller.Create)
 	r.PUT("/api/products/:id", productcontroller.Update)
